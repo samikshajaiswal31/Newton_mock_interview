@@ -1,1 +1,13 @@
-
+  ======FINAL CALL : MAYBE======
+  
+  Q1) Circular rotation of the array element towards the right side using input k which no. of rotation. 
+       I/P : = arr[] = {1,2,3,4,5}  , k = 1                O/P :=  {5,1,2,3,4}
+       I/P : = arr[] = {1,2,3,4,5}  , k = 2                O/P :=  {4,5,1,2,3}
+       
+  
+  Q2)  Reversed the character of String but not the special character and special character should be on 
+       the same index after reversing the string.
+       I/P := abc        O/P := cba                 I/P := abc,       O/P := cba,
+       I/P := ab@c       O/P := cb@a                I/P := a!bc        O/P := c!ba
+       
+      
