@@ -1,1 +1,27 @@
+======== FINAL CALL :- MAYBE ==========
+
+Q1)  Take an array and size of array from user input and Implement Bubble Sort?
+     I/P : 7 SIZE    ARR[] = [3,9,1,2,5,4,0]        O/P : [0,1,2,3,4,5,9]
+     
+     
+---------------------------------------------------------------------------------------------------------    
+Q2)  Find the smallest number greater than or equal to k in a sorted ( means ascending array) array, try to do 
+     the searching (finding smallest no.) in time complexity of  O(log n).
+     (means in terms of binary search, not binary search exactly but modified version of binary search)
+      
+     I/P : k = 4     arr[] = [1,2,3,5,6,7,9]        O/P  : 5      
+     Explanation:- 4 is not in arr, so greater than 4 is [5,6,7,9] but among [5,6,7,9] 5 is smallest, so ans is 5.
+     
+     I/P : k = 5     arr[] = [1,2,3,5,6,7,9]        O/P  : 5      
+     Explanation:- 5 is in arr, so ans is 5.
+     
+     I/P : k = 10    arr[] = [1,2,3,5,6,7,9]        O/P  : -1     
+     Explanation:- 10 is not in arr and greater 10 is also not availabel, so ans is -1.
+     
+     I/P : k = 8     arr[] = [1,2,3,5,6,7,9]        O/P  : 9     
+     Explanation:- 8 is not in arr, so greater than 8 is 9.
+     
+     I/P : k = 2     arr[] = [1,2,3,5,6,7,9]        O/P  : 2      
+     Explanation:- 2 is in arr, so ans is 2.
+------------------------------------------------------------------------------------------------------
 
