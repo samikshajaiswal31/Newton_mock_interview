@@ -9,9 +9,12 @@ Q2)   WAP for of Sum of all daigonal elements in 2D-Array?
               sum = arr[1,1] + arr[2,2] + arr[3,3]
                   =   1  + 5 + 9 
                   =   15
-                  
-                  
-Q3)   Explain & Write a program for Binary Search?
+                                    
+Q3)   Explain & Write a program for Binary Search & what is time complexity of this algorithm?
 
 Q4)   Write a program for linear search and what is time complexity of this algorithm?
+
+Q5)   What is hashing?    How hashing works?    How to declared hashmap?    How to put the elements in hashmap?
+
+Q6)   What is sorting (bubble, selection, insertion, merge, quick) and what is time complexity of all sortings?
       
