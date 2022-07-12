@@ -1,1 +1,21 @@
+========= FINAL CALL : MAYBE ========
 
+Q1)  Difference between Linear and Binary search & Why Binary search is better than Linear search as compared 
+     to time complexity?     OR    Why binary is much lesser tha linear search?
+     
+     
+Q2)  What is Time complexity of Bubble and Insertion sort ?       ANS:  O(n^2) in both sort.    
+                           In which case it will be O(n^2)?       ANS:  Worst case in both sort.
+                           
+                           
+Q3)  WAP to print an array in reverse order without using another/temporary/new array? 
+     Hint : use for loop in reversed way ie, size = 5 then, for loop from index(4 to 0) and print element directly.
+     
+     I/P : [4,7,6,2,1]      O/P : [1,2,6,7,4]
+     I/P : [1,2,3,4,5]      O/P : [5,4,3,2,1]
+     
+     
+Q4)  WAP to print -ve no. in beginning and +ve value at the end of an array? (DON'T USE SORTING TECHNIQUES)
+     I/P :- [-7, 4, 5, -2, 1, 8, -3]          O/P :- [-7, -2, -3, 4, 5, 1, 8]
+     
+ -------------------------------------------------------------------------------------------------------
