@@ -1,1 +1,47 @@
+========= FINAL CALL :- MAYBE =========
 
+Q1)  What is arrays? Is it possible to store mixed datatypes such as int, string, float all in one array,
+     like arr[1,1.5,"abc",6] ?
+ANS: NO, Because array is a collection of elements of same data type.
+     We can’t store because arrays are bound to be storing only homogeneous data.
+     BUT, 
+        Arraylist can hold different types of data, if it is not created using Java Generics.
+        
+        a) Example of an ArrayList without using Java Generics:
+        CODE :  import java.util.ArrayList;
+                class ArrayLists 
+                {
+                   public static void main(String args[]) 
+                   {
+                      ArrayList list = new ArrayList();     // GENERICS ARE NOT USED IN <> BRACKETS   
+                      list.add("10");
+                      list.add(1);
+                      System.out.println(list);              //  [10, 1]
+                    }
+                 }
+               
+        Explanation : The first element added is a String and the second element added is an Integer. 
+                      In such a case, the developer has to remember the type of the element while accessing it.
+
+        b) Example of an ArrayList using Java Generics:
+        CODE :  import java.util.ArrayList;
+                class ArrayLists 
+                {
+                    public static void main(String args[]) 
+                    {
+                        ArrayList<String> list = new ArrayList<String>();  // [ GENERICS ARE USED IN <> BRACKETS
+                        list.add("john");                                  //    WHICH IS STRING ]
+                        list.add("bates");
+                        System.out.println(list);            // [john, bates]
+                     }
+                  }
+--------------------------------------------------------------------------------------------------------------
+
+Q2)  What is hashing ?
+
+Q3)  Check whether 2 Strings are anagrams or not & frequency (no. of times) of each character should be same.
+     I/P : abc       O/P : bca       //  size is 3 and each element freq is same 
+
+Q4)  What all types of sorting and searching ?
+
+Q5)  Implementation of Binary search
