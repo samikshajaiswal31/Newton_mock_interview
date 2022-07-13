@@ -37,11 +37,23 @@ ANS: NO, Because array is a collection of elements of same data type.
                   }
 --------------------------------------------------------------------------------------------------------------
 
-Q2)  What is hashing ?
+Q2)  What are types arrays ? 
+=> single array (we can declare elements in linear way)
+   2d-array (we can declare elements in matrix way)
+   
+Q3)  What is hashing ?  
+     How we can achieve hashing ? => by using hashset ie. HashSet<> set = new HashSet<>();
+     Basic difference between Map(hashMap), Set(hashSet), ArrayList ?
 
-Q3)  Check whether 2 Strings are anagrams or not & frequency (no. of times) of each character should be same.
-     I/P : abc       O/P : bca       //  size is 3 and each element freq is same 
+Q3)  Write a function, take 2 string and take boolean, return the value true/flase, And 
+     Check whether 2 Strings are anagrams or not & frequency (no. of times) of each character should be same.
+     I/P : abc       O/P : true    (bca)       //  size is 3 and each element freq is same 
+     I/P : aaf       O/P : true    (afa)
+     I/P : abc       O/P : flase   (ba)
+     
+     Hint : try to use hashing
 
-Q4)  What all types of sorting and searching ?
+Q4)  What is sorting ? What is searching ? What types of sorting and searching you aware about ?
 
-Q5)  Implementation of Binary search
+Q5)  Implementation of Binary search and time complexity of algorithm code ?
+----------------------------------------------------------------------------------------------------------------
