@@ -1,3 +1,5 @@
+========= :: EASY/MEDIUM/HARD :: ==========
+
 DSA BASICS 1
 >Arrays  >Sorting  >Searching  >Hashing
 
