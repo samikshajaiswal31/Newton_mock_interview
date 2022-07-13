@@ -1,0 +1,45 @@
+========= Final call :- ==========
+
+Q1) Given a sorted array and a number x, find a pair in an array whose sum is closest to x/ smaller than x.
+    I/P:    {10, 22, 28, 29, 30, 40}, x = 54
+    Output:  22 and 30
+    (22+30 = 52 colsest to x=54, rest of pair are less than 52).
+    
+SOLUTION : sum<k   //. possible 
+           sum == k // best case 
+           sum > k   // discard 
+
+logic 1: int finalSum = -1;
+
+         int i = 0;
+         int j = arr.length-1;
+         2 pointer ->
+
+          while(i<j)
+          {
+               sum = arr[i]+arr[j]
+	             if(sum>k)
+  	              j--;
+    
+               if(sum<k)
+  	              i++;
+          }
+          
+logic 2: arr[] = 10, 22, 28, 29, 30, 40}, x = 54
+
+          for(int i = 0;i<arr.length;i++)      
+          {
+              for(int j = i+1 ;i<arr.length;i++)
+              {
+  		            sum = arr[i]+arr[j]
+                  if(sum==k)
+      	              return sum
+                  else if(sum>k)  
+      		            break;
+                  else if (sum < k && finalSum < sum)   
+                  {
+      		          finalSum = sum ;
+                  } 
+              }
+              return finalSum;
+          }
