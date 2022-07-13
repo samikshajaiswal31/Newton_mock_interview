@@ -1,6 +1,8 @@
 ========= Final call :- ==========
 
-Q1) Given a sorted array and a number x, find a pair in an array whose sum is closest to x/ smaller than x.
+Q1) Time complexity of Insertion sort best case, Quick sort worst and average case, Merge sort ?
+
+Q2) Given a sorted array and a number x, find a pair in an array whose sum is closest to x/ smaller than x.
     I/P:    {10, 22, 28, 29, 30, 40}, x = 54
     Output:  22 and 30
     (22+30 = 52 colsest to x=54, rest of pair are less than 52).
