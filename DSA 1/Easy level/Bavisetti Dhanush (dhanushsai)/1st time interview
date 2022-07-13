@@ -1,3 +1,10 @@
 ========= FINAL CALL : YES ===========
 
+Q1)  Arrange the elements into a sequence such that arr[1] >= arr[2] <= arr[3] >= arr[4] <= arr[5]......and so on.
+     I/P: {1,2,3,4,5}     O/P: {2,1,4,3,5}    
+     // even index element should be greater than next element which odd index element.
+     // odd index element should be less than next element which even index element.
+    
+Q2)  Cyclically rotate an array by one to right side and fixing last element to the left side
+     I/P: {1,2,3,4,5}     O/P: {5,1,2,3,4}
 
