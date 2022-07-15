@@ -1,8 +1,12 @@
 Q1)  Find first and last positions of an repeated element in a sorted array using Binary Search algorithm ?
+
       I/P1: arr[] = {1,3,5,5,5,5,7,9}            I/P2: arr[] = {1, 3, 5, 5, 5, 5, 67, 123, 125}
       O/P2: first index = 2                      O/P2: first index = 2   
             last index = 5                             last index = 5
             (as 5 is repeated element)                 (as 5 is repeated element)
+            
+SOLUTION :
+
          
 
       
