@@ -1,1 +1,6 @@
+===========Final Call :- No ===========
 
+Given a sorted array and a number x, find a pair in an array whose sum is closest to x.
+Examples:
+Input: arr[] = {10, 22, 28, 29, 30, 40}, x = 54
+Output: 22 and 30
