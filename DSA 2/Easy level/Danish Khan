@@ -90,6 +90,6 @@ class LL
        list.addLast(3);
        list.addLast(78);
        
-       list.printList();
+       list.printList();                           // 1->2->3->78->NULL
     }
 }
