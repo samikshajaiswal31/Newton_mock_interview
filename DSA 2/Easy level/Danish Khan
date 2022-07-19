@@ -1,0 +1,95 @@
+: ================= Final call :  ================== :
+
+Q1) 
+
+    I/P := my name is danish
+    O/P := 3   
+    
+import java.util.*;
+class HelloWorld 
+{
+    public static void main(String[] args) 
+    {
+        String str = "my name is Danish";
+        str = str.toLowerCase();
+        int count = 0;
+        
+        for(int i = 0; i < str.length(); i++)
+        {
+            if( str.charAt(i) == ' ')
+                ++count;
+            //if( str.charAt(i) >= 'a' && str.charAt(i) <= 'z') 
+                //continue;
+            //else
+                
+        }
+        System.out.println(count); 
+    }
+}
+
+---------------------------------------------------------------------------------------------------------------------
+
+Q2) 
+        I/P :=  1 2 3 4 5 
+        O/P :=  1 2 3 4 78
+class LL 
+{
+    Node head;
+    public class Node
+    {
+        int data;
+        Node next;
+        
+        Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    
+  
+    
+    public void addLast(int data)
+    {
+        Node newNode = new Node(data);
+        if(head == null)
+        {
+            head = newNode;
+            return;
+        }
+        Node lastNode = head;
+        while(lastNode.next != null)
+        {
+            lastNode = lastNode.next;
+        }
+        lastNode.next = newNode;
+        newNode.next = null;
+    }
+    
+    public void printList()
+    {
+        if(head == null)
+        {
+            System.out.println(head);
+            return;
+        }
+        Node currNode = head;
+        while(currNode != null)
+        {
+            System.out.print(currNode.data + "->");
+            currNode = currNode.next;
+        }
+        System.out.println("NULL");
+    }
+    
+    public static void main(String[] args) 
+    {
+       LL list = new LL();
+       list.addLast(1);
+       list.addLast(2);
+       list.addLast(3);
+       list.addLast(78);
+       
+       list.printList();
+    }
+}
