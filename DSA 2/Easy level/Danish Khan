@@ -1,10 +1,17 @@
-: ================= Final call :  ================== :
+: ================= Final call : YES ================== :
 
-Q1) 
+Q1) What is a String. 
 
-    I/P := my name is danish
-    O/P := 3   
+Q2) What is a Linked List? What is Circular Linked List?  Advantages of Linked List?
+
+Q3) Singly Linked List VS Doubly Linked List? 
+------------------------------------------------------------------------------------------------------
+
+Q4) Count the number of spaces in the given string
+    I/P := my name is danish           O/P := 3   
     
+SOLUTION: 
+
 import java.util.*;
 class HelloWorld 
 {
@@ -18,10 +25,6 @@ class HelloWorld
         {
             if( str.charAt(i) == ' ')
                 ++count;
-            //if( str.charAt(i) >= 'a' && str.charAt(i) <= 'z') 
-                //continue;
-            //else
-                
         }
         System.out.println(count); 
     }
@@ -29,9 +32,11 @@ class HelloWorld
 
 ---------------------------------------------------------------------------------------------------------------------
 
-Q2) 
-        I/P :=  1 2 3 4 5 
-        O/P :=  1 2 3 4 78
+Q2)  Add a node at the Last in a given Linked List
+     I/P :=  1 2 3 4 5         O/P :=  1 2 3 4 78
+     
+SOLUTION:
+
 class LL 
 {
     Node head;
