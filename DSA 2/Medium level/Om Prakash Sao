@@ -1,4 +1,8 @@
-Q1) Print the each character of a string as node of linked list.
+: =========== Final call : NO ============ :
+
+Q1) Reverse a string using Stack. Discuss time complexity.
+
+Q2) Given a string, create a linked list having each chars as the node of LL. Discuss time complexity
     I/P :- str = "abcerd"          O/P :- d r e c b a         
 
 Solution: 
