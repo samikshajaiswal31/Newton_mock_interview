@@ -1,1 +1,179 @@
+aabbc = ab
+ 
+abc, aabc, abbc, aabbc
 
+
+
+
+
+Basics of Programming - Sandeep Sharma
+Arrays
+Sortings
+Strings
+Q0. 
+ Write an algo to find if a given number k is even or odd.
+Q1.
+ There are N balloons numbered from 1 to N. Every balloon has another integer value Arr[i] assigned to it where i varies from 1 to N, and i represents the number of balloons.
+
+A balloon at an odd position (i = 1, 3, 5. ) is happy if Arr[i] is odd.
+A balloon at an even position (i = 2, 4, 6. ) is happy if Arr[i] is even.
+
+Find the number of happy balloons.
+Input
+The first line of the input contains a single integer N.
+The second line of the input contains N singly spaced integers, Arr[1], Arr[2], Arr[3],. , Arr[N].
+
+Constrains
+1 <= N <= 200000
+1 <= Arr[i] <= 1000000
+Output
+Output a single integer, the number of happy balloons.
+
+Example
+Sample Input
+5 
+1 3 4 6 7 <-Balloons with number
+1 2 3 4 5 <- Positions
+
+Sample Output
+3
+
+Explanation
+Happy balloons are balloons numbered 1, 4, 5.
+
+Sample Input
+5
+1 2 3 4 5
+
+Sample Output
+5
+
+
+Q2.
+
+There are n boys and m toys. Your task is to distribute the toys so that as many boys as possible will get a toy.
+Each boy has a desired toy size, and they will accept any toy whose size is close enough to the desired size.
+So if the desired toy size of a particular boy is 'a' and a particular toy has size 'b', then boy will only accept the toy if |b-a| <= k.
+
+Input
+The first input line has three integers n, m, and k: the number of boys, the number of toys, and the maximum allowed difference.
+
+The next line contains n integers a[1], a[2],…, a[n]: the desired toy size of each boy. If the desired toy size of a boy is x, he will accept any toy whose size is between x−k and x+k.
+
+The last line contains m integers b[1], b[2],…, b[m]: the size of each toy.
+
+Constraints
+1 ≤ n,m ≤ 200000
+0 ≤ k ≤ 1000000000
+1 ≤ a[i],b[i] ≤ 1000000000
+Output
+Print one integer: the number of boys who will get a toy.
+
+
+Example
+
+Sample Input
+4 3 5
+60 45 80 60
+30 60 75
+
+Sample Output
+2
+
+Explanation: One possible way can give second toy to first boy and third toy to third boy.
+
+Sample Input:
+10 10 0
+37 62 56 69 34 46 10 86 16 49
+50 95 47 43 9 62 83 71 71 7
+
+Sample Output:
+1
+
+
+
+
+
+
+
+
+
+Q3.
+Guess the output of the program
+
+package org.arpit.java2blog;
+ 
+class A
+{
+    void m1() throws ArrayIndexOutOfBoundsException
+    {
+        System.out.println("In m1 A");
+    }
+}
+class B extends A
+{
+    void m1() throws IndexOutOfBoundsException
+    {
+        System.out.println("In m1 B");
+    }
+}
+public class Test {
+ 
+    public static void main(String[] args) {
+        A a=new B();
+        a.m1();
+    }
+}
+
+
+Q4.
+Guess the output of the program
+
+package org.arpit.java2blog;
+ 
+import java.io.IOException;
+ 
+class A
+{
+    void m1() throws IOException
+    {
+        System.out.println("In m1 A");
+    }
+}
+class B extends A
+{
+    void m1() throws Exception
+    {
+        System.out.println("In m1 B");
+    }
+}
+public class Test {
+ 
+    public static void main(String[] args) {
+        A a=new B();
+        try {
+            a.m1();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+Q5.
+You are given an integer array nums and you have to return a new counts array. The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
+
+Example:
+
+
+Input: [5,2,6,1]
+Output: [2,1,1,0] 
+
+
+Explanation:
+
+
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
