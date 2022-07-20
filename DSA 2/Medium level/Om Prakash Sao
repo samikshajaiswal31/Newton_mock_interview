@@ -1,0 +1,56 @@
+Q1) Print the each character of a string as node of linked list.
+    I/P :- str = "abcerd"          O/P :- d r e c b a         
+
+Solution: 
+
+import java.util.*;
+class Main
+{
+    Node head;
+    public class Node
+    {
+        char data;
+        Node next;
+        
+        Node(char data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    
+    public void add(char data)
+    {
+        Node temp = new Node(data);  
+        temp.next = head;
+        head = temp;
+    }
+    
+    public void print()
+    {
+        Node temp = head;
+        while(temp.next != null)
+        {
+            System.out.print(temp.data+"->");
+            temp = temp.next;
+        }
+        System.out.print(temp.data+"->Null");
+    }
+  
+    public static void main(String[] args) 
+    {
+        String str = "abcerd";                      
+        Main list = new Main();
+    
+        for(int i = 0; i < str.length() ; i++)
+            list.add(str.charAt(i));
+        
+        list.print();                                // d r e c b a in reverse manner  ( d->r->e->c->b->a->Null )
+        
+        
+         for(int i = (str.length() - 1); i >= 0 ; --i)
+            list.add(str.charAt(i));
+        
+         list.print();                               //  a b c e r d   in order manner    
+    }
+}
