@@ -1,0 +1,65 @@
+1).  what is JS ?
+2).  What is the DOM?
+3).  What's the difference between == and ===
+4).  What is Hoisting?
+5).  What are the falsy values in JavaScript?
+6).  What is an IIFE, what is the use of it?
+7).  What is Event Propagation?
+8).  What's Event Bubbling?
+9).  let vs var vs const
+
+-------------------------------------------------------------------------------------------------------
+Q10)  Analyse the output
+
+       " const person = {
+                          age: 20,
+                          name: 'Ben'
+                       };
+         const peopleArray = [person, person, person];
+         peopleArray[1].name = 'Joe';
+         console.log(peopleArray[0].name);  "
+         
+-------------------------------------------------------------------------------------------------------
+
+Q11)   Given a string, reverse each word in the sentence " welcome to the newton school"
+
+SOLUTION:
+
+var str = "welcome to the newton school";
+var newStr = "";
+for(let i = str.length-1; i >= 0; --i)
+{
+  newStr += str.charAt(i); 
+}
+console.log(newStr);
+
+----------------------------------------------------------------------------------------------------------
+
+Q12)    Given two strings, return true if they are anagrams of one another 
+        For example: Mary is an anagram of Army  
+    
+SOLUTIION : ( WRONG )
+
+var str1 = "mary";
+var str2 = "army";
+var count = 0;
+
+
+for(let i = 0; i < str1.length-1; i++)
+{
+  for(let j = 0; j < str2.length-1; j++)
+  {
+    if(str1.charAt(i) == str2.charAt(j))    
+    {
+      ++count; 
+    }
+  }
+}
+
+if(count == str1.length)
+  console.log("anagram");
+else
+  console.log("not anagram");
+  
+---------------------------------------------------------------------------------------------------------
+
